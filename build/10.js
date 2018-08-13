@@ -97,7 +97,7 @@ var CoreUserParticipantsPage = /** @class */ (function () {
     }
     CoreUserParticipantsPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-core-user-participants',template:/*ion-inline-start:"/home/gideon/Bureau/git/moodlemobile2/src/core/user/pages/participants/participants.html"*/'<ion-header>\n    <ion-navbar>\n        <ion-title>{{ \'core.user.participants\' | translate }}</ion-title>\n    </ion-navbar>\n</ion-header>\n<core-user-participants [courseId]="courseId"></core-user-participants>'/*ion-inline-end:"/home/gideon/Bureau/git/moodlemobile2/src/core/user/pages/participants/participants.html"*/,
+            selector: 'page-core-user-participants',template:/*ion-inline-start:"C:\Users\Boubacar Sidy Diallo\Desktop\sauvegarde SG\moodlemobile2\src\core\user\pages\participants\participants.html"*/'<ion-header>\n\n    <ion-navbar>\n\n        <ion-title>{{ \'core.user.participants\' | translate }}</ion-title>\n\n    </ion-navbar>\n\n</ion-header>\n\n<core-user-participants [courseId]="courseId"></core-user-participants>'/*ion-inline-end:"C:\Users\Boubacar Sidy Diallo\Desktop\sauvegarde SG\moodlemobile2\src\core\user\pages\participants\participants.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["r" /* NavParams */]])
     ], CoreUserParticipantsPage);

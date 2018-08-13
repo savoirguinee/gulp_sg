@@ -1,6 +1,6 @@
 webpackJsonp([53],{
 
-/***/ 1846:
+/***/ 1845:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -10,7 +10,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__directives_directives_module__ = __webpack_require__(15);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__phase__ = __webpack_require__(1969);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__phase__ = __webpack_require__(1968);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__core_compile_components_compile_html_compile_html_module__ = __webpack_require__(391);
 // (C) Copyright 2015 Martin Dougiamas
 //
@@ -60,7 +60,7 @@ var AddonModWorkshopPhaseSelectorPageModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 1969:
+/***/ 1968:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -120,7 +120,7 @@ var AddonModWorkshopPhaseSelectorPage = /** @class */ (function () {
     };
     AddonModWorkshopPhaseSelectorPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-addon-mod-workshop-phase-selector',template:/*ion-inline-start:"/home/gideon/Bureau/git/moodlemobile2/src/addon/mod/workshop/pages/phase/phase.html"*/'<ion-header>\n    <ion-navbar>\n        <ion-title>{{ \'addon.mod_workshop.selectphase\' | translate }}</ion-title>\n        <ion-buttons end>\n            <button ion-button icon-only (click)="closeModal()" [attr.aria-label]="\'core.close\' | translate">\n                <ion-icon name="close"></ion-icon>\n            </button>\n        </ion-buttons>\n    </ion-navbar>\n</ion-header>\n<ion-content>\n    <ion-list radio-group [(ngModel)]="selected" (ionChange)="switchPhase()">\n        <ng-container *ngFor="let phase of phases">\n            <ion-item *ngIf="workshopPhase >= phase.code || phase.tasks.length || phase.switchUrl">\n                <ion-label>{{ phase.title }}\n                    <p text-wrap *ngIf="workshopPhase == phase.code">{{ \'addon.mod_workshop.userplancurrentphase\' | translate }}</p>\n                </ion-label>\n                <ion-radio [value]="phase.code"></ion-radio>\n            </ion-item>\n            <ion-item *ngIf="!(workshopPhase >= phase.code || phase.tasks.length || phase.switchUrl)">\n                {{ phase.title }}\n            </ion-item>\n        </ng-container>\n    </ion-list>\n</ion-content>\n'/*ion-inline-end:"/home/gideon/Bureau/git/moodlemobile2/src/addon/mod/workshop/pages/phase/phase.html"*/,
+            selector: 'page-addon-mod-workshop-phase-selector',template:/*ion-inline-start:"C:\Users\Boubacar Sidy Diallo\Desktop\sauvegarde SG\moodlemobile2\src\addon\mod\workshop\pages\phase\phase.html"*/'<ion-header>\n\n    <ion-navbar>\n\n        <ion-title>{{ \'addon.mod_workshop.selectphase\' | translate }}</ion-title>\n\n        <ion-buttons end>\n\n            <button ion-button icon-only (click)="closeModal()" [attr.aria-label]="\'core.close\' | translate">\n\n                <ion-icon name="close"></ion-icon>\n\n            </button>\n\n        </ion-buttons>\n\n    </ion-navbar>\n\n</ion-header>\n\n<ion-content>\n\n    <ion-list radio-group [(ngModel)]="selected" (ionChange)="switchPhase()">\n\n        <ng-container *ngFor="let phase of phases">\n\n            <ion-item *ngIf="workshopPhase >= phase.code || phase.tasks.length || phase.switchUrl">\n\n                <ion-label>{{ phase.title }}\n\n                    <p text-wrap *ngIf="workshopPhase == phase.code">{{ \'addon.mod_workshop.userplancurrentphase\' | translate }}</p>\n\n                </ion-label>\n\n                <ion-radio [value]="phase.code"></ion-radio>\n\n            </ion-item>\n\n            <ion-item *ngIf="!(workshopPhase >= phase.code || phase.tasks.length || phase.switchUrl)">\n\n                {{ phase.title }}\n\n            </ion-item>\n\n        </ng-container>\n\n    </ion-list>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\Boubacar Sidy Diallo\Desktop\sauvegarde SG\moodlemobile2\src\addon\mod\workshop\pages\phase\phase.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["r" /* NavParams */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["B" /* ViewController */]])
     ], AddonModWorkshopPhaseSelectorPage);
