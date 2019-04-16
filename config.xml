@@ -3,8 +3,8 @@
         xmlns:gap = "http://phonegap.com/ns/1.0"
         xmlns:android = "http://schemas.android.com/apk/res/android"
         id        = "com.savoirguinee.moodlemobile"
-        versionCode = "35102"
-        android-versionCode="35102"
+        versionCode = "35105"
+        android-versionCode="35105"
         version   = "3.6.1">
     <name>SAVOIR-GUINEE MOOC</name>
 
@@ -13,7 +13,7 @@
     </description>
 
     <author href="http://moodle.com" email="mobile@moodle.com">
-        Moodle Mobile team
+        SAVOIR-GUINEE officiel
     </author>
 
     <edit-config target="CFBundleShortVersionString" file="*-Info.plist" mode="merge">
