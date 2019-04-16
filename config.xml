@@ -3,8 +3,8 @@
         xmlns:gap = "http://phonegap.com/ns/1.0"
         xmlns:android = "http://schemas.android.com/apk/res/android"
         id        = "com.savoirguinee.moodlemobile"
-        versionCode = "35110"
-        android-versionCode="35110"
+        versionCode = "35112"
+        android-versionCode="35112"
         version   = "3.6.2">
     <name>SAVOIR-GUINEE MOOC</name>
 
