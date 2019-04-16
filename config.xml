@@ -4,8 +4,8 @@
         xmlns:android = "http://schemas.android.com/apk/res/android"
         id        = "com.savoirguinee.moodlemobile"
         versionCode = "35102"
-        android-versionCode="35101"
-        version   = "3.6.0">
+        android-versionCode="35102"
+        version   = "3.6.1">
     <name>SAVOIR-GUINEE MOOC</name>
 
     <description>
