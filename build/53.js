@@ -1,17 +1,16 @@
 webpackJsonp([53],{
 
-/***/ 1844:
+/***/ 1876:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AddonModWorkshopPhaseSelectorPageModule", function() { return AddonModWorkshopPhaseSelectorPageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CorePlaceholderPageModule", function() { return CorePlaceholderPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__directives_directives_module__ = __webpack_require__(15);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__phase__ = __webpack_require__(1967);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__core_compile_components_compile_html_compile_html_module__ = __webpack_require__(391);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__placeholder__ = __webpack_require__(2004);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ngx_translate_core__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_module__ = __webpack_require__(13);
 // (C) Copyright 2015 Martin Dougiamas
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
@@ -31,42 +30,43 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+// Code based on https://github.com/martinpritchardelevate/ionic-split-pane-demo
 
 
 
 
 
-
-var AddonModWorkshopPhaseSelectorPageModule = /** @class */ (function () {
-    function AddonModWorkshopPhaseSelectorPageModule() {
+var CorePlaceholderPageModule = /** @class */ (function () {
+    function CorePlaceholderPageModule() {
     }
-    AddonModWorkshopPhaseSelectorPageModule = __decorate([
+    CorePlaceholderPageModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_4__phase__["a" /* AddonModWorkshopPhaseSelectorPage */],
+                __WEBPACK_IMPORTED_MODULE_2__placeholder__["a" /* CoreSplitViewPlaceholderPage */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_3__directives_directives_module__["a" /* CoreDirectivesModule */],
-                __WEBPACK_IMPORTED_MODULE_5__core_compile_components_compile_html_compile_html_module__["a" /* CoreCompileHtmlComponentModule */],
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_4__phase__["a" /* AddonModWorkshopPhaseSelectorPage */]),
-                __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__["b" /* TranslateModule */].forChild()
+                __WEBPACK_IMPORTED_MODULE_4__components_module__["a" /* CoreComponentsModule */],
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__placeholder__["a" /* CoreSplitViewPlaceholderPage */]),
+                __WEBPACK_IMPORTED_MODULE_3__ngx_translate_core__["b" /* TranslateModule */].forChild()
             ],
+            exports: [
+                __WEBPACK_IMPORTED_MODULE_2__placeholder__["a" /* CoreSplitViewPlaceholderPage */]
+            ]
         })
-    ], AddonModWorkshopPhaseSelectorPageModule);
-    return AddonModWorkshopPhaseSelectorPageModule;
+    ], CorePlaceholderPageModule);
+    return CorePlaceholderPageModule;
 }());
 
-//# sourceMappingURL=phase.module.js.map
+//# sourceMappingURL=placeholder.module.js.map
 
 /***/ }),
 
-/***/ 1967:
+/***/ 2004:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AddonModWorkshopPhaseSelectorPage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CoreSplitViewPlaceholderPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(4);
 // (C) Copyright 2015 Martin Dougiamas
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
@@ -89,45 +89,22 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+// Code based on https://github.com/martinpritchardelevate/ionic-split-pane-demo
 
-
-/**
- * Page that displays the phase selector modal.
- */
-var AddonModWorkshopPhaseSelectorPage = /** @class */ (function () {
-    function AddonModWorkshopPhaseSelectorPage(params, viewCtrl) {
-        this.viewCtrl = viewCtrl;
-        this.selected = params.get('selected');
-        this.original = this.selected;
-        this.phases = params.get('phases');
-        this.workshopPhase = params.get('workshopPhase');
+var CoreSplitViewPlaceholderPage = /** @class */ (function () {
+    function CoreSplitViewPlaceholderPage() {
+        // Nothing to do.
     }
-    /**
-     * Close modal.
-     */
-    AddonModWorkshopPhaseSelectorPage.prototype.closeModal = function () {
-        this.viewCtrl.dismiss();
-    };
-    /**
-     * Select phase.
-     */
-    AddonModWorkshopPhaseSelectorPage.prototype.switchPhase = function () {
-        // This is a quick hack to avoid the first switch phase call done just when opening the modal.
-        if (this.original != this.selected) {
-            this.viewCtrl.dismiss(this.selected);
-        }
-        this.original = null;
-    };
-    AddonModWorkshopPhaseSelectorPage = __decorate([
+    CoreSplitViewPlaceholderPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-addon-mod-workshop-phase-selector',template:/*ion-inline-start:"C:\Users\Boubacar Sidy Diallo\Desktop\sauvegarde SG\moodlemobile2\src\addon\mod\workshop\pages\phase\phase.html"*/'<ion-header>\n\n    <ion-navbar>\n\n        <ion-title>{{ \'addon.mod_workshop.selectphase\' | translate }}</ion-title>\n\n        <ion-buttons end>\n\n            <button ion-button icon-only (click)="closeModal()" [attr.aria-label]="\'core.close\' | translate">\n\n                <ion-icon name="close"></ion-icon>\n\n            </button>\n\n        </ion-buttons>\n\n    </ion-navbar>\n\n</ion-header>\n\n<ion-content>\n\n    <ion-list radio-group [(ngModel)]="selected" (ionChange)="switchPhase()">\n\n        <ng-container *ngFor="let phase of phases">\n\n            <ion-item *ngIf="workshopPhase >= phase.code || phase.tasks.length || phase.switchUrl">\n\n                <ion-label>{{ phase.title }}\n\n                    <p text-wrap *ngIf="workshopPhase == phase.code">{{ \'addon.mod_workshop.userplancurrentphase\' | translate }}</p>\n\n                </ion-label>\n\n                <ion-radio [value]="phase.code"></ion-radio>\n\n            </ion-item>\n\n            <ion-item *ngIf="!(workshopPhase >= phase.code || phase.tasks.length || phase.switchUrl)">\n\n                {{ phase.title }}\n\n            </ion-item>\n\n        </ng-container>\n\n    </ion-list>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\Boubacar Sidy Diallo\Desktop\sauvegarde SG\moodlemobile2\src\addon\mod\workshop\pages\phase\phase.html"*/,
+            selector: 'core-placeholder',template:/*ion-inline-start:"/Users/boubacar/Desktop/gitproject/moodlemobile2/src/components/split-view/placeholder/core-placeholder.html"*/'<ion-header>\n    <ion-navbar core-back-button>\n        <ion-title>&nbsp;</ion-title>\n    </ion-navbar>\n</ion-header>\n\n<ion-content>\n    <core-empty-box icon="arrow-dropleft" [message]="\'core.emptysplit\' | translate"></core-empty-box>\n</ion-content>\n'/*ion-inline-end:"/Users/boubacar/Desktop/gitproject/moodlemobile2/src/components/split-view/placeholder/core-placeholder.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["r" /* NavParams */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["B" /* ViewController */]])
-    ], AddonModWorkshopPhaseSelectorPage);
-    return AddonModWorkshopPhaseSelectorPage;
+        __metadata("design:paramtypes", [])
+    ], CoreSplitViewPlaceholderPage);
+    return CoreSplitViewPlaceholderPage;
 }());
 
-//# sourceMappingURL=phase.js.map
+//# sourceMappingURL=placeholder.js.map
 
 /***/ })
 
